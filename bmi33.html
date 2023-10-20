@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #0a0909;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #c4b4b4;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Content here -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="https://sci.skru.ac.th/science/index.php">คอมพิวเตอร์ศึกษา</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form </div>
+        </nav>
+
+        <h1>Salary Calculator</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form>
+                            <!DOCTYPE html>
+                            <html>
+
+                            <head>
+                                <meta charset="utf-8">
+                                <title>Angular Update Weekend Challenge #1</title>
+                                <script
+                                    src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+                                <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'
+                                    type='text/css'>
+                                <link rel="stylesheet" href="stylesheet.css" />
+
+                                <script src="apps.js"></script>
+
+                            </head>
+
+                            <body>
+                                <main ng-app="basicApp">
+                                    <section ng-controller="BasicController as basic">
+
+                                        <head>
+                                            <style>
+
+                                            </style>
+                                        </head>
+                                        <h4>Salary amount</h4>
+                                        <form id="employeeInfo">
+
+                                            <div>
+                                                <label for="lastName"></label>
+
+
+                                                <main ng-app="basicApp">
+                                                    <section ng-controller="BasicController as basic">
+
+
+                                                        <div>
+                                                            <br>
+                                                            <input type="text" id="amount" class="input-box" required />
+                                                            </label> <label for="firstName">per:</label>
+
+                                                            <select id="hour_or_day" onchange="myFunction()">
+                                                                <option value="hour">Hour</option>
+                                                                <option value="day">Day</option>
+
+                                                            </select>
+                                                            <br>
+                                                            <p>
+                                                                <br>
+
+                                                            <div>
+                                                                <label for="lastName">Hours per week: </label>
+                                                                <input type="text" id="hours_per_week" class="input-box"
+                                                                    ng-model="basic.list.lastName" />
+                                                            </div>
+                                                            <br>
+                                                        </div>
+                                                        <div>
+                                                            <label for="employeeId">Days per week:</label>
+                                                            <input type="number" id="days_per_week" class="input-box"
+                                                                ng-model="basic.list.employeeId" />
+                                                        </div>
+                                                        <br>
+                                                        <div>
+                                                            <br>
+                                                            <br>
+                                                            <button type="button" onclick="calculate()"
+                                                                class="btn btn-primary">Calculate</button>
+                                                            <button type="reset"
+                                                                class="btn btn-secondary">Clear</button>
+
+
+                                                    </section>
+                                            </div>
+                                            <br>
+                                        </form>
+                    </div>
+                    </main>
+                    <br>
+
+
+
+                    <table>
+                        <tr>
+                            <td></td>
+                            <h1>Result</h2>
+                                <td>Unadjusted</td>
+                                <td>Holidays & vacation days adjusted</td>
+                        </tr>
+                        <tr>
+                            <td>Hourly</td>
+                            <td><p id="result1"></p></td>
+                            <td>$45.19</td>
+                        </tr>
+                        <tr>
+                            <td>Daily</td>
+                            <td><P id="result2"></P></td>
+                            <td>$361.54</td>
+                        </tr>
+                        <tr>
+
+                </div>
+                </table>
+
+                <script>
+                    function calculate() {
+                        let amount = document.getElementById("amount").value;
+                        let hour_or_day = document.getElementById("hour_or_day").value;
+                        let hours_per_week = document.getElementById("hours_per_week").value;
+                        let days_per_week = document.getElementById("days_per_week").value;
+                       let total;
+                       let total_daily;
+
+                       if(hour_or_day == "hour"){
+                            total = amount * hours_per_week;
+                            document.getElementById("result1").innerHTML = total;
+                            //total_daily = 
+
+                       } else if(hour_or_day == "day"){
+                            total = amount * days_per_week;
+                            document.getElementById("result2").innerHTML = total;
+
+                       }
+
+
+
+                       
+                        
+                    }
+
+                </script>
+
+</body>
+
+</html>
